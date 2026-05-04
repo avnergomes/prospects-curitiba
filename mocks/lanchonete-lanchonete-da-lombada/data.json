@@ -1,0 +1,26 @@
+{
+  "slug": "lanchonete-lanchonete-da-lombada",
+  "category": "lanchonete",
+  "name": "Lanchonete da Lombada",
+  "title_long": "Lanchonete da Lombada",
+  "neighborhood": "Pilarzinho",
+  "address": "R. Gardênio Scorzato, 1730 - Pilarzinho, Curitiba - PR, 82100-240",
+  "address_short": "R. Gardênio Scorzato, 1730",
+  "phone": "(41) 99930-9044",
+  "phone_digits_wa": "5541999309044",
+  "phone_digits_tel": "+5541999309044",
+  "rating": "4,6",
+  "reviews_count": "1420",
+  "tagline": "Lanche gigante, delivery rápido, vibe de boteco do Pilarzinho. 1.420 avaliações 4,6 no Google.",
+  "tagline_short": "Pilarzinho, Curitiba. 4,6 com 1.420 avaliações.",
+  "about_h2": "Lanche gigante, do Pilarzinho.",
+  "about_p1": "Lanchonete da Lombada é referência de hambúrguer artesanal em Curitiba: 4,6 com 1.420 avaliações no Google. Delivery rápido e o famoso 'lanche gigante' que serve a família inteira, segundo os próprios clientes.",
+  "schedule": "Terça a Sábado, 17h-23h. Segunda e Domingo fechado",
+  "extras": ["Delivery", "WhatsApp Business"],
+  "photos": ["photo1.jpg"],
+  "reviews": [
+    "Local muito bom, preço justo. Estávamos em 6 pessoas, o lanche gigante serviu muito bem.",
+    "Pedimos pelo WhatsApp um delivery de X-Lombada para o centro de Curitiba, chegou muito rápido em 45 minutos. O lanche é simplesmente gigantesco e muito gostoso.",
+    "Comi várias vezes em casa via delivery. Lanche bem feito, ingredientes frescos, e o atendimento pelo WhatsApp é direto."
+  ]
+}
