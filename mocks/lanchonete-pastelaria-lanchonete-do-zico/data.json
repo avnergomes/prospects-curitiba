@@ -1,0 +1,26 @@
+{
+  "slug": "lanchonete-pastelaria-lanchonete-do-zico",
+  "category": "lanchonete",
+  "name": "Pastelaria do Zico",
+  "title_long": "Pastelaria & Lanchonete do Zico",
+  "neighborhood": "Bom Retiro",
+  "address": "R. Mateus Leme, 2655 - Bom Retiro, Curitiba - PR, 80530-010",
+  "address_short": "R. Mateus Leme, 2655",
+  "phone": "(41) 99781-8410",
+  "phone_digits_wa": "5541997818410",
+  "phone_digits_tel": "+5541997818410",
+  "rating": "4,6",
+  "reviews_count": "460",
+  "tagline": "Pastel grande, recheado, equivale a um almoço inteiro. Bom Retiro, 4,6 com 460 avaliações.",
+  "tagline_short": "Bom Retiro, Curitiba. 4,6 com 460 avaliações.",
+  "about_h2": "Pastel grande, no Bom Retiro.",
+  "about_p1": "A Pastelaria do Zico é referência de pastel farto no Bom Retiro: 4,6 com 460 avaliações no Google. Os clientes contam que um único pastel equivale a um almoço inteiro. Ambiente familiar, atendimento atencioso, preço justo.",
+  "schedule": "Confirmar horário no Google Maps",
+  "extras": ["Pastéis grandes", "Ambiente familiar", "Bom Retiro"],
+  "photos": ["photo1.jpg"],
+  "reviews": [
+    "Excelente atendimento, muito capricho, local limpo, ambiente familiar, localização boa. Lanches e pastéis de dar água na boca, saborosos, com preço justo. Super indico.",
+    "Pastel delicioso e grande. Um único pastel equivale a um almoço ou janta. Atendimento nota dez.",
+    "Maravilhoso o pastel. Local limpo, familiar, preço justo. Sabor surpreendente."
+  ]
+}
