@@ -1,0 +1,34 @@
+{
+  "slug": "oficina-mecanica-casa-do-hidrovacuo-auto-freios-rohden",
+  "category": "oficina-mecanica",
+  "name": "Casa do Hidrovácuo Auto Freios Rohden",
+  "title_long": "Casa do Hidrovácuo Auto Freios Rohden",
+  "neighborhood": "Portão",
+  "address": "R. Augusto de Mari, 3.720 - Portão, Curitiba - PR, 80610-180",
+  "address_short": "R. Augusto de Mari, 3720",
+  "phone": "(41) 3345-7373",
+  "phone_digits_wa": "554133457373",
+  "phone_digits_tel": "+554133457373",
+  "rating": "4,5",
+  "reviews_count": "297",
+  "tagline": "Especialista em freios e hidrovácuo no Portão. Cássio na oficina, Vanessa no atendimento, 4,5 com 297 avaliações.",
+  "tagline_short": "Portão, Curitiba. 4,5 com 297 avaliações.",
+  "about_h2": "Especialista em freios.",
+  "about_p1": "A Casa do Hidrovácuo Auto Freios Rohden é especialista em sistemas de freio (hidrovácuo, cilindro mestre, pastilhas, discos) no Portão. 4,5 com 297 avaliações no Google. Atendimento técnico com profissionais de nome conhecido no balcão.",
+  "schedule": "Confirmar horário no Google Maps",
+  "extras": ["Especialista em freios", "Hidrovácuo", "Cilindro mestre"],
+  "photos": ["photo1.jpg"],
+  "menu": [
+    ["Hidrovácuo", "Reparo, troca, regulagem."],
+    ["Cilindro mestre", "Diagnóstico e conserto."],
+    ["Pastilhas e discos", "Troca para todas as marcas."],
+    ["Sistema ABS", "Verificação e reparo."],
+    ["Diagnóstico", "Identificação precisa do problema."],
+    ["Orçamento", "Apresentado antes do serviço."]
+  ],
+  "reviews": [
+    "Profissionais de alta qualidade e trabalho competente. Parabéns Cássio pela condução dos trabalhos.",
+    "Atendimento técnico, oficina especializada em freios. Diagnóstico claro antes de cobrar.",
+    "Trabalhei com a Vanessa no atendimento, comunicação direta sobre o que precisava ser feito."
+  ]
+}
