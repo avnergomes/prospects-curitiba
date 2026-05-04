@@ -1,0 +1,26 @@
+{
+  "slug": "lanchonete-lanchonete-do-cambara",
+  "category": "lanchonete",
+  "name": "Lanchonete do Cambará",
+  "title_long": "Lanchonete do Cambará",
+  "neighborhood": "Santa Quitéria",
+  "address": "R. Bocaiúva, 891 - Santa Quiteria, Curitiba - PR, 80310-140",
+  "address_short": "R. Bocaiúva, 891",
+  "phone": "(41) 99679-0800",
+  "phone_digits_wa": "5541996790800",
+  "phone_digits_tel": "+5541996790800",
+  "rating": "4,8",
+  "reviews_count": "742",
+  "tagline": "Sanduíches podrões, recheados, com cara de cidade do interior. Santa Quitéria há anos, 4,8 com 742 avaliações.",
+  "tagline_short": "Santa Quitéria, Curitiba. 4,8 com 742 avaliações.",
+  "about_h2": "Sanduíche podrão, na Santa Quitéria.",
+  "about_p1": "A Lanchonete do Cambará faz os famosos 'sanduíches podrões' no melhor estilo cidade-do-interior: recheados, fartos, com cheese bacon egg como carro-chefe. 4,8 com 742 avaliações no Google. Referência de bairro na Santa Quitéria.",
+  "schedule": "Confirmar horário no Google Maps",
+  "extras": ["Sanduíches podrões", "Cheese bacon egg", "Bairro de Santa Quitéria"],
+  "photos": ["photo1.jpg"],
+  "reviews": [
+    "Excelentes sanduíches, são os famosos 'sanduíches podrões' muito comuns em cidades do interior. Grande e super recheado, especialmente o cheese bacon egg.",
+    "Excelente atendimento. Lanche com preço justo e muito bom no sabor. Super recomendo.",
+    "Somos clientes há muitos anos. Os lanches são maravilhosos e os preços super justos, ambiente legal."
+  ]
+}
