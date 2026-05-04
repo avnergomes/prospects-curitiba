@@ -1,0 +1,26 @@
+{
+  "slug": "barbearia-virus-barbershop",
+  "category": "barbearia",
+  "name": "VÍRUS BARBERSHOP",
+  "title_long": "VÍRUS BARBERSHOP",
+  "neighborhood": "Portão",
+  "address": "R. Eduardo Carlos Pereira, 3605 - Portão, Curitiba - PR, 81020-235",
+  "address_short": "R. Eduardo Carlos Pereira, 3605",
+  "phone": "(41) 3308-6980",
+  "phone_digits_wa": "554133086980",
+  "phone_digits_tel": "+554133086980",
+  "rating": "4,8",
+  "reviews_count": "299",
+  "tagline": "Corte minucioso, atendimento próximo, profissionais com nome (Diana, Leandro). Portão, 4,8 com 299 avaliações.",
+  "tagline_short": "Portão, Curitiba. 4,8 com 299 avaliações.",
+  "about_h2": "Barbearia com gente que importa.",
+  "about_p1": "A VÍRUS BARBERSHOP é uma barbearia do Portão onde os clientes citam os profissionais pelo nome. Diana cuida de cabelo, atendimento e novidades; Leandro corta com método e dedicação. 4,8 com 299 avaliações no Google.",
+  "schedule": "Confirmar horário no Google Maps",
+  "extras": ["Atendimento masculino e feminino", "Tratamentos capilares"],
+  "photos": ["photo1.jpg"],
+  "reviews": [
+    "Atendimento perfeito. Pedi um corte básico e saí renovada. Pedi recomendação de produtos e tratamentos, o moço me indicou o que eu precisava e fez milagre no meu cabelo.",
+    "Diana é excelente profissional. Corte masculino, super atenciosa. Cada vez mais aprimorando no atendimento e aconchego que só ela sabe fazer.",
+    "O barbeiro Leandro faz um trabalho minucioso e com muita dedicação para que o corte fique adequado e valorize o formato do rosto do cliente. Não demonstra ter pressa, faz seu trabalho com precisão. Super indico."
+  ]
+}
