@@ -1,0 +1,22 @@
+# mocks/
+
+Saída do agente `mock-builder` (comando `/mock <slug>`).
+
+Cada prospect ganha `mocks/<slug>/index.html` (single-file, Tailwind CDN).
+
+Para preview local:
+```
+cd C:\Users\avner\prospects-curitiba
+py -m http.server 8000
+# abrir http://localhost:8000/mocks/<slug>/
+```
+
+Para publicar (após GitHub Pages configurado):
+```
+git add mocks/<slug>/
+git commit -m "feat(mock): <slug>"
+git push
+# disponível em https://<user>.github.io/prospects-curitiba/mocks/<slug>/
+```
+
+Esquema definido em `.claude/agents/mock-builder.md`.

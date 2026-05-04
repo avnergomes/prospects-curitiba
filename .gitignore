@@ -1,0 +1,28 @@
+# Allowlist mode: ignore tudo por padrão, depois permite só o que vai público.
+*
+*/
+
+# === Whitelist público ===
+!.gitignore
+!.nojekyll
+!README.md
+!index.html
+!mocks/
+!mocks/**
+
+# === Excluir do whitelist ===
+mocks/**/preview.png
+mocks/**/.DS_Store
+
+# === Itens privados que NUNCA devem ir pro git ===
+.env
+.env.local
+.env.*.local
+__pycache__/
+*.pyc
+*.swp
+*~
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

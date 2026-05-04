@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Basset Lanches — Juvevê, Curitiba · desde 1994</title>
+<meta name="description" content="Clássico de Curitiba desde 1994, em frente ao Museu Oscar Niemeyer. Bife azedo, carne de onça, chope gelado. Juvevê.">
+<meta property="og:title" content="Basset Lanches">
+<meta property="og:description" content="Desde 1994, em frente ao MON. Bife azedo da avó Regina, carne de onça, chope gelado.">
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lora:ital,wght@0,400;0,600;1,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --amber: #d4901a;
+    --amber-dark: #a86d10;
+    --rust: #8a3a1f;
+    --cream: #f7f1e6;
+    --cream-dark: #ede4d2;
+    --ink: #2b1810;
+  }
+  body { font-family: 'Lora', Georgia, serif; color: var(--ink); background: var(--cream); }
+  .display { font-family: 'Bebas Neue', Impact, sans-serif; letter-spacing: 0.02em; }
+  .ui { font-family: 'Inter', system-ui, sans-serif; }
+  .bg-ink { background: var(--ink); }
+  .bg-amber { background: var(--amber); }
+  .bg-rust { background: var(--rust); }
+  .bg-cream { background: var(--cream); }
+  .bg-cream-dark { background: var(--cream-dark); }
+  .text-amber { color: var(--amber); }
+  .text-rust { color: var(--rust); }
+  .text-cream { color: var(--cream); }
+  .border-amber { border-color: var(--amber); }
+  .hover\:bg-amber-dark:hover { background: var(--amber-dark); }
+  .vintage-divider {
+    height: 8px;
+    background-image: repeating-linear-gradient(90deg, var(--amber) 0 12px, transparent 12px 24px);
+  }
+  .stamp {
+    border: 3px double var(--rust);
+    color: var(--rust);
+    transform: rotate(-4deg);
+  }
+</style>
+</head>
+<body class="antialiased">
+
+<!--
+  Mock: Basset Lanches
+  Slug: lanchonete-basset-lanches
+  Tier: 1
+  Gerado em: 2026-05-04 a partir de enriched/lanchonete-basset-lanches/research.md
+  Para preview local:
+    py -m http.server 8000  →  http://localhost:8000/mocks/lanchonete-basset-lanches/
+  Antes de mandar:
+    [ ] confirmar paleta com Instagram @bassetlanches
+    [ ] foto da fachada e da varanda com vista MON
+    [ ] foto do bife azedo + carne de onça
+    [ ] 3 reviews reais do Maps
+    [ ] checar wa.me/554131540761 abre conversa (telefone fixo, pode não ter WhatsApp — testar)
+-->
+
+<!-- HERO -->
+<header class="relative bg-ink text-cream overflow-hidden">
+  <div class="max-w-5xl mx-auto px-6 py-20 md:py-28 text-center relative">
+    <div class="inline-block stamp ui text-xs uppercase tracking-widest font-bold px-4 py-1 mb-6">desde 1994</div>
+    <h1 class="display text-7xl md:text-9xl text-amber leading-none mb-4">BASSET</h1>
+    <p class="display text-2xl md:text-3xl text-cream/80 mb-8">LANCHES · JUVEVÊ · CURITIBA</p>
+    <blockquote class="italic text-base md:text-xl max-w-2xl mx-auto text-cream/90 mb-10 leading-relaxed">
+      "Não foi o meu bar que construíram na frente do museu.<br>
+      <span class="text-amber">Foi o museu que construíram na frente do meu bar."</span>
+    </blockquote>
+    <div class="flex flex-col sm:flex-row gap-3 justify-center ui">
+      <a href="https://wa.me/554131540761?text=Ol%C3%A1%21+Vim+pelo+site.+Gostaria+de+reservar+uma+mesa+ou+fazer+um+pedido"
+         target="_blank" rel="noopener"
+         data-track="cta" data-id="hero-whatsapp"
+         class="bg-amber hover:bg-amber-dark text-ink font-bold px-8 py-4 rounded-sm transition uppercase tracking-wider text-sm">
+        Reservar / Pedir
+      </a>
+      <a href="https://www.instagram.com/bassetlanches/" target="_blank" rel="noopener"
+         data-track="cta" data-id="hero-instagram"
+         class="border-2 border-amber text-amber hover:bg-amber hover:text-ink font-bold px-8 py-4 rounded-sm transition uppercase tracking-wider text-sm">
+        Instagram
+      </a>
+    </div>
+    <div class="mt-10 ui text-xs text-cream/60 tracking-wider uppercase">
+      ★ 4,4 · 1.271 avaliações no Google · em frente ao Museu Oscar Niemeyer
+    </div>
+  </div>
+</header>
+
+<div class="vintage-divider"></div>
+
+<!-- TRÊS GERAÇÕES -->
+<section id="historia" class="bg-cream py-20">
+  <div class="max-w-4xl mx-auto px-6">
+    <div class="text-center mb-12">
+      <p class="ui text-rust text-xs tracking-[0.3em] uppercase mb-3">TRÊS GERAÇÕES · UM BAR</p>
+      <h2 class="display text-5xl md:text-6xl text-ink">A HISTÓRIA DO BASSET</h2>
+    </div>
+
+    <div class="space-y-8 text-lg leading-relaxed">
+      <p>
+        Tudo começou com <strong>João Francisco de Souza Raposo</strong>, português que abriu banca de
+        revistas, depois Cantina Açores, depois Barolho — sempre na esquina certa do Juvevê.
+      </p>
+      <p>
+        Em <strong>1994</strong>, a 2ª geração — Kiko, Karina e Cássia — fundou o Basset Lanches.
+        O nome é homenagem a <em>Billy</em>, o primeiro cachorro da família, que virou o logo da casa.
+      </p>
+      <p>
+        Hoje, <strong>João Luiz Lavalle Raposo</strong> toca o bar como 3ª geração. Os clientes que vinham
+        com o pai trazem os filhos. O bife azedo — receita da avó Regina — segue o mesmo desde o começo.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- CARDÁPIO -->
+<section id="cardapio" class="bg-ink text-cream py-20">
+  <div class="max-w-5xl mx-auto px-6">
+    <div class="text-center mb-12">
+      <p class="ui text-amber text-xs tracking-[0.3em] uppercase mb-3">O QUE A GENTE FAZ DE MELHOR</p>
+      <h2 class="display text-5xl md:text-6xl text-amber">CARDÁPIO</h2>
+    </div>
+
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
+
+      <article class="border border-amber/30 p-6 hover:bg-amber/5 transition">
+        <p class="ui text-amber text-[10px] uppercase tracking-[0.2em] mb-2">Receita da avó Regina</p>
+        <h3 class="display text-3xl text-amber mb-3">BIFE AZEDO</h3>
+        <p class="text-sm text-cream/80 leading-relaxed">Iscas de carne com cebola. O prato-assinatura. Há mais de 30 anos no mesmo ponto.</p>
+      </article>
+
+      <article class="border border-amber/30 p-6 hover:bg-amber/5 transition">
+        <p class="ui text-amber text-[10px] uppercase tracking-[0.2em] mb-2">Clássico curitibano</p>
+        <h3 class="display text-3xl text-amber mb-3">CARNE DE ONÇA</h3>
+        <p class="text-sm text-cream/80 leading-relaxed">Filé bovino cru, cebola, cebolinha, sobre torrada. Patrimônio gastronômico do Paraná.</p>
+      </article>
+
+      <article class="border border-amber/30 p-6 hover:bg-amber/5 transition">
+        <h3 class="display text-3xl text-amber mb-3">CORAÇÃO CROCANTE</h3>
+        <p class="text-sm text-cream/80 leading-relaxed">Petisco de boteco honesto. Crocante por fora, suculento por dentro.</p>
+      </article>
+
+      <article class="border border-amber/30 p-6 hover:bg-amber/5 transition">
+        <h3 class="display text-3xl text-amber mb-3">PROVOLONE À MILANESA</h3>
+        <p class="text-sm text-cream/80 leading-relaxed">Empanado, dourado, derretendo por dentro. Acompanha geleia.</p>
+      </article>
+
+      <article class="border border-amber/30 p-6 hover:bg-amber/5 transition">
+        <h3 class="display text-3xl text-amber mb-3">BOLINHO DE SIRI</h3>
+        <p class="text-sm text-cream/80 leading-relaxed">Massa leve, recheio generoso. Acompanha limão.</p>
+      </article>
+
+      <article class="border border-amber/30 p-6 hover:bg-amber/5 transition">
+        <h3 class="display text-3xl text-amber mb-3">CHOPE GELADO</h3>
+        <p class="text-sm text-cream/80 leading-relaxed">Pra acompanhar o pôr-do-sol sobre o Niemeyer. Sempre na temperatura certa.</p>
+      </article>
+
+    </div>
+    <p class="text-center text-xs text-cream/40 mt-8 ui">[ confirmar cardápio completo e preços com a casa ]</p>
+  </div>
+</section>
+
+<!-- VARANDA MON -->
+<section class="relative bg-rust text-cream py-20">
+  <div class="max-w-4xl mx-auto px-6 text-center">
+    <p class="ui text-cream/70 text-xs tracking-[0.3em] uppercase mb-3">A VARANDA QUE OLHA O OLHO</p>
+    <h2 class="display text-5xl md:text-6xl mb-6">PÔR-DO-SOL SOBRE O MON</h2>
+    <p class="text-lg leading-relaxed max-w-2xl mx-auto italic">
+      O Museu Oscar Niemeyer é vizinho. A nossa varanda é o melhor lugar de Curitiba pra ver o sol cair
+      atrás dele com um chope na mão.
+    </p>
+    <div class="aspect-[3/4] md:aspect-[4/3] mt-10 rounded-sm overflow-hidden max-w-2xl mx-auto">
+      <img src="./photos/photo1.jpg" alt="Interior do Basset Lanches: balcão de madeira, prateleira de bebidas, foto preto-e-branco do Museu Oscar Niemeyer na parede e camisa de time emoldurada" class="w-full h-full object-cover">
+    </div>
+  </div>
+</section>
+
+<!-- REVIEWS -->
+<section id="reviews" class="bg-cream-dark py-20">
+  <div class="max-w-5xl mx-auto px-6">
+    <div class="text-center mb-12">
+      <p class="ui text-rust text-xs tracking-[0.3em] uppercase mb-3">CLIENTES NO GOOGLE</p>
+      <h2 class="display text-5xl md:text-6xl text-ink">1.271 AVALIAÇÕES · ★ 4,4</h2>
+    </div>
+    <div class="grid md:grid-cols-3 gap-6">
+      <article class="bg-cream p-6 border-l-4 border-amber shadow-sm">
+        <p class="text-amber text-sm mb-2 ui">★★★★★</p>
+        <p class="text-stone-700 text-sm leading-relaxed mb-4 italic">"Boteco com ambiente maravilhoso, vista excelente pro Museu do Olho e por sol. As porções de bife azedo, carne de onça e coração crocante são deliciosas, excelentes pratos típicos da cidade."</p>
+        <p class="text-xs text-stone-500 ui">— Matheus Andrade · Local Guide</p>
+      </article>
+      <article class="bg-cream p-6 border-l-4 border-amber shadow-sm">
+        <p class="text-amber text-sm mb-2 ui">★★★★★</p>
+        <p class="text-stone-700 text-sm leading-relaxed mb-4 italic">"Porções gostosas a preço justo, cerveja gelada e uma bela vista para o MON. Ótima opção para ver o pôr do sol."</p>
+        <p class="text-xs text-stone-500 ui">— André V. K. · Local Guide</p>
+      </article>
+      <article class="bg-cream p-6 border-l-4 border-amber shadow-sm">
+        <p class="text-amber text-sm mb-2 ui">★★★★★</p>
+        <p class="text-stone-700 text-sm leading-relaxed mb-4 italic">"Bar bacana, cerveja gelada, sanduíche delicioso, preços amigáveis. Atendentes educados, vista boa do museu. Bom lugar pra jogar conversa fora."</p>
+        <p class="text-xs text-stone-500 ui">— Michael Dias · Local Guide</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- CONTATO -->
+<section id="contato" class="bg-cream py-20">
+  <div class="max-w-5xl mx-auto px-6 grid md:grid-cols-2 gap-10">
+    <div>
+      <p class="ui text-rust text-xs tracking-[0.3em] uppercase mb-3">CONTATO</p>
+      <h2 class="display text-5xl md:text-6xl mb-6 text-ink">VEM CHEGANDO.</h2>
+
+      <div class="space-y-4 text-stone-700 ui">
+        <div>
+          <p class="text-xs uppercase tracking-wider text-stone-500 mb-1">Endereço</p>
+          <p>R. Marechal Hermes, 1024<br>Juvevê · Curitiba/PR · 82590-300</p>
+          <p class="text-xs text-stone-500 mt-1">Em frente ao Museu Oscar Niemeyer</p>
+        </div>
+        <div>
+          <p class="text-xs uppercase tracking-wider text-stone-500 mb-1">Horário</p>
+          <p>Todos os dias · 15h–00h</p>
+          <p class="text-xs text-stone-500 mt-1">R$ 40–60 por pessoa</p>
+        </div>
+        <div>
+          <p class="text-xs uppercase tracking-wider text-stone-500 mb-1">Telefone</p>
+          <p><a href="tel:+554131540761" class="hover:text-amber">(41) 3154-0761</a></p>
+        </div>
+      </div>
+
+      <div class="mt-8 flex flex-col sm:flex-row gap-3 ui">
+        <a href="https://wa.me/554131540761?text=Ol%C3%A1%21+Vim+pelo+site.+Gostaria+de+reservar+uma+mesa+ou+fazer+um+pedido"
+           target="_blank" rel="noopener"
+           data-track="cta" data-id="contato-whatsapp"
+           class="bg-green-700 hover:bg-green-800 text-cream font-bold px-6 py-3 rounded-sm transition uppercase tracking-wider text-sm text-center">
+          WhatsApp
+        </a>
+        <a href="https://www.instagram.com/bassetlanches/" target="_blank" rel="noopener"
+           data-track="cta" data-id="contato-instagram"
+           class="bg-ink text-amber hover:bg-stone-800 font-bold px-6 py-3 rounded-sm transition uppercase tracking-wider text-sm text-center">
+          @bassetlanches
+        </a>
+      </div>
+    </div>
+
+    <div class="aspect-square bg-stone-100 rounded-sm overflow-hidden">
+      <iframe
+        src="https://maps.google.com/maps?q=R.+Marechal+Hermes%2C+1024%2C+Juvev%C3%AA%2C+Curitiba&t=&z=16&ie=UTF8&iwloc=&output=embed"
+        width="100%" height="100%" style="border:0" loading="lazy"
+        title="Mapa Basset Lanches"></iframe>
+    </div>
+  </div>
+</section>
+
+<div class="vintage-divider"></div>
+
+<footer class="bg-ink text-cream/50 py-8 text-center text-xs ui">
+  <p>BASSET LANCHES · DESDE 1994 · Juvevê · Curitiba/PR</p>
+  <p class="mt-2 text-cream/30">Versão de demonstração — site institucional proposto.</p>
+</footer>
+
+<!-- TRACKING (descomentar após Supabase configurado) -->
+<!--
+<script>
+const SUPABASE_URL = 'https://<id>.supabase.co';
+const SUPABASE_ANON = '<anon-key>';
+const SLUG = 'lanchonete-basset-lanches';
+async function trackEvent(type, meta = {}) {
+  try { await fetch(`${SUPABASE_URL}/rest/v1/events`, { method: 'POST', headers: { 'apikey': SUPABASE_ANON, 'Authorization': `Bearer ${SUPABASE_ANON}`, 'Content-Type': 'application/json' }, body: JSON.stringify({ prospect_slug: SLUG, type, user_agent: navigator.userAgent, referrer: document.referrer, meta }) }); } catch (e) {}
+}
+trackEvent('page_view');
+document.querySelectorAll('[data-track="cta"]').forEach(el => { el.addEventListener('click', () => trackEvent('cta_click', { id: el.dataset.id })); });
+let scrolledBottom = false;
+window.addEventListener('scroll', () => { if (!scrolledBottom && (window.innerHeight + window.scrollY) >= document.body.offsetHeight - 80) { scrolledBottom = true; trackEvent('scroll_bottom'); } });
+</script>
+-->
+
+</body>
+</html>
