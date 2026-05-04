@@ -1,0 +1,26 @@
+{
+  "slug": "lanchonete-pastelaria-jacare",
+  "category": "lanchonete",
+  "name": "Pastelaria Jacaré",
+  "title_long": "Pastelaria Jacaré",
+  "neighborhood": "Bacacheri",
+  "address": "Av. Paraná, 2656 - Bacacheri, Curitiba - PR, 82510-000",
+  "address_short": "Av. Paraná, 2656",
+  "phone": "(41) 99189-2770",
+  "phone_digits_wa": "5541991892770",
+  "phone_digits_tel": "+5541991892770",
+  "rating": "4,6",
+  "reviews_count": "1047",
+  "tagline": "Pastel sequinho, recheado e dividido em duas partes para comer com calma. Bacacheri há anos, 1.047 avaliações 4,6 no Google.",
+  "tagline_short": "Bacacheri, Curitiba. 4,6 com 1.047 avaliações.",
+  "about_h2": "Pastelaria de bairro, no Bacacheri.",
+  "about_p1": "A Pastelaria Jacaré é referência no Bacacheri: 4,6 com 1.047 avaliações no Google. Pastel sequinho, bem recheado, com sabores que vão do tradicional carne ao mais fora da curva (carne com Doritos, palmito-pizza). Ambiente com área interna e externa coberta.",
+  "schedule": "Terça a Sexta, 12h-14h e 16h-22h. Sábado 16h30-22h. Segunda e Domingo fechado",
+  "extras": ["Pastéis variados", "Comer no local", "Boteco de bairro"],
+  "photos": ["photo1.jpg"],
+  "reviews": [
+    "Muito bom. Pastel sequinho, bem recheado. Vem em duas partes, achei diferente e prático de comer. Ambiente legal, tem área interna e externa coberta.",
+    "Cheguei com a intenção de comer vários pastéis. Pedimos o menor e mais tradicional, é grande, bem recheado e saboroso. Fomos de palmito e pizza, grata surpresa, tempero excelente.",
+    "Massa boa, pastel bem recheado e grande. Escolhi o sabor carne com Doritos e estava uma delícia. Já vou querer voltar outras vezes."
+  ]
+}
