@@ -7,15 +7,18 @@
 <meta name="description" content="Barbearia Del Castro — Portão, Curitiba. 5,0★ com 104 avaliações no Google. Marca registrada, ambiente vintage curado, Gigio e Ricardo na cadeira.">
 <meta property="og:title" content="Barbearia Del Castro — Portão, Curitiba">
 <meta property="og:description" content="5,0★ com 104 avaliações. 'Em outro patamar' — ambiente original, equipamentos de primeira linha, Gigio e Ricardo na cadeira.">
+<meta property="og:image" content="./photos/logo.png">
+<link rel="icon" type="image/png" href="./photos/logo.png">
 <script src="https://cdn.tailwindcss.com"></script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
   :root {
-    --primary: #1a1a1a; --primary-dark: #0a0a0a;
-    --secondary: #c9a96e; --secondary-dark: #a88848;
-    --wood: #8b6f47; --wood-dark: #5e4a30;
+    --primary: #0d0d0d; --primary-dark: #000000;
+    --secondary: #e8804a; --secondary-dark: #c8632d;
+    --accent: #f1c948; --accent-dark: #d8a82e;
+    --cream: #f1e9d2; --cream-soft: #f8f3e3;
     --bg: #f4ede0; --bg-alt: #fbf7f0;
     --ink: #1a1a1a; --ink-soft: #3a3a3a;
   }
@@ -23,10 +26,11 @@
   .display { font-family: 'Playfair Display', Georgia, serif; }
   .bg-primary { background: var(--primary); } .bg-primary-dark { background: var(--primary-dark); }
   .bg-secondary { background: var(--secondary); } .bg-secondary-dark { background: var(--secondary-dark); }
-  .bg-wood { background: var(--wood); }
+  .bg-accent { background: var(--accent); }
+  .bg-cream { background: var(--cream); } .bg-cream-soft { background: var(--cream-soft); }
   .bg-mock { background: var(--bg); } .bg-alt { background: var(--bg-alt); }
   .text-primary { color: var(--primary); } .text-secondary { color: var(--secondary); }
-  .text-wood { color: var(--wood); }
+  .text-accent { color: var(--accent); } .text-cream { color: var(--cream); }
   .border-primary { border-color: var(--primary); } .border-secondary { border-color: var(--secondary); }
   .hover\:bg-primary-dark:hover { background: var(--primary-dark); }
   .hover\:bg-secondary-dark:hover { background: var(--secondary-dark); }
@@ -41,13 +45,13 @@
 <!-- HERO -->
 <header class="bg-primary text-white py-16 md:py-24 relative overflow-hidden">
   <div class="max-w-5xl mx-auto px-6 text-center relative">
-    <p class="text-secondary text-xs tracking-[0.3em] uppercase mb-4 font-bold">Av. Rep. Argentina, 3052 · Portão · Curitiba</p>
-    <h1 class="display text-4xl md:text-6xl leading-tight mb-3 font-bold">
-      <span class="text-secondary">Barbearia Del Castro</span><span class="text-secondary text-2xl align-top ml-1">®</span>
-    </h1>
-    <p class="text-secondary text-sm tracking-[0.2em] uppercase mb-8">Tradição e personalização desde sempre</p>
+    <img src="./photos/logo.png"
+         alt="Logo Barbearia Del Castro: nome em letras manuscritas alaranjadas com sombra preta, sobre fundo escuro, com navalha prateada e cigarro estilizados; estrelas amarelas no canto superior direito"
+         class="mx-auto w-full max-w-md md:max-w-lg mb-6"
+         loading="eager">
+    <p class="text-cream/80 text-xs tracking-[0.3em] uppercase mb-8 font-bold">Av. Rep. Argentina, 3052 · Portão · Curitiba · PR</p>
 
-    <p class="text-base md:text-lg max-w-2xl mx-auto mb-10 text-white/85 leading-relaxed italic display">
+    <p class="text-base md:text-lg max-w-2xl mx-auto mb-10 text-cream/90 leading-relaxed italic display">
       "Eles estão em outro patamar — recepção super calorosa, atendimento atencioso, ambiente super original para uma barbearia."
     </p>
 
@@ -73,17 +77,19 @@
 <!-- SOBRE -->
 <section id="sobre" class="bg-alt py-20">
   <div class="max-w-5xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
-    <div class="aspect-[4/3] rounded-sm overflow-hidden vintage-frame bg-stone-200 flex items-center justify-center">
-      <span class="text-stone-500 italic text-center px-4">[ foto interior do Maps — piso de mármore + cadeira vintage ]<br><br>capturar manualmente em<br>maps.google.com/Barbearia+Del+Castro</span>
+    <div class="aspect-[4/3] rounded-sm overflow-hidden vintage-frame">
+      <img src="./photos/photo1.jpg"
+           alt="Interior da Barbearia Del Castro: três cadeiras de barbeiro de couro marrom em fila, parede de tijolo aparente com molduras vintage (Elvis, dartboard, pôster Fight Club), espelhos com moldura de madeira, piso de mármore branco, bandeirinhas triangulares e luminárias industriais"
+           class="w-full h-full object-cover">
     </div>
     <div>
       <p class="text-secondary text-xs tracking-[0.3em] uppercase mb-3 font-bold">Sobre a casa</p>
       <h2 class="display text-3xl md:text-5xl mb-5 leading-tight" style="color: var(--primary);">Marca registrada<br>na Av. Rep. Argentina.</h2>
       <p class="text-base leading-relaxed text-stone-700 mb-4">
-        Os clientes citam <strong>Gigio</strong> e <strong>Ricardo</strong> pelo nome nos comentários do Google — a marca aqui são as pessoas, e a história está nas paredes. Ambiente vintage curado, equipamentos de primeira linha, papo bom enquanto o corte sai.
+        Os clientes citam <strong>Gigio</strong> e <strong>Ricardo</strong> pelo nome no Google — a marca aqui são as pessoas. As paredes contam o resto: <strong>tijolo aparente, molduras vintage, Elvis na coluna, bandeirinhas e o pôster do Fight Club</strong>. Cadeiras de couro marrom, espelhos de madeira maciça, piso de mármore branco. Ambiente curado, peça por peça.
       </p>
       <p class="text-base leading-relaxed text-stone-700">
-        São <strong class="text-primary">104 avaliações no Google com média 5,0★</strong> — número raríssimo para uma barbearia de bairro com mais de 100 reviews. Todo o tráfego digital ainda passa por Maps e Instagram. Esta página é a propriedade própria que junta tudo.
+        São <strong class="text-primary">104 avaliações no Google com média 5,0★</strong> — número raríssimo para barbearia de bairro com mais de 100 reviews. Hoje, todo o tráfego digital passa por Maps e Instagram. Esta página é a propriedade própria que junta tudo.
       </p>
     </div>
   </div>
@@ -224,7 +230,7 @@
 
 <!-- FOOTER -->
 <footer class="bg-primary-dark text-white/60 py-10 text-center text-xs">
-  <p class="display text-2xl text-secondary mb-2">Barbearia Del Castro <span class="text-base align-top">®</span></p>
+  <img src="./photos/logo.png" alt="Barbearia Del Castro" class="mx-auto w-40 mb-3 opacity-90" loading="lazy">
   <p>Av. Rep. Argentina, 3052 · Portão · Curitiba/PR</p>
   <p class="mt-3 text-white/30">Versão de demonstração — site institucional proposto.</p>
 </footer>
