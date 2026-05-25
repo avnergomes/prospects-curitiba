@@ -134,6 +134,144 @@
   <p class="mt-2 text-white/30">Versão de demonstração — site institucional proposto.</p>
 </footer>
 
+<!-- ===== LEAD FORM — APG-116 ===== -->
+<!-- Inserir antes do <script> de tracking (que fica antes do </body>). -->
+<section id="lead-form-section" class="w-full bg-stone-50 border-t border-stone-200 py-12 px-4">
+  <div class="max-w-lg mx-auto">
+    <h2 class="text-2xl font-bold text-stone-900 mb-1">Solicite um Orçamento</h2>
+    <p class="text-stone-500 text-sm mb-6">Preencha o formulário e entraremos em contato em breve.</p>
+
+    <form id="lead-form" novalidate class="space-y-4">
+
+      <div>
+        <label for="lf-name" class="block text-sm font-medium text-stone-700 mb-1">
+          Nome <span aria-hidden="true" class="text-red-500">*</span>
+        </label>
+        <input
+          id="lf-name"
+          type="text"
+          name="name"
+          required
+          autocomplete="name"
+          placeholder="Seu nome completo"
+          class="w-full rounded-lg border border-stone-300 bg-white px-3 py-2.5 text-sm text-stone-900 placeholder-stone-400 focus:outline-none focus:ring-2 focus:ring-stone-900 focus:border-transparent transition"
+        />
+      </div>
+
+      <div>
+        <label for="lf-phone" class="block text-sm font-medium text-stone-700 mb-1">
+          Telefone / WhatsApp <span aria-hidden="true" class="text-red-500">*</span>
+        </label>
+        <input
+          id="lf-phone"
+          type="tel"
+          name="phone"
+          required
+          autocomplete="tel"
+          placeholder="(41) 9 0000-0000"
+          class="w-full rounded-lg border border-stone-300 bg-white px-3 py-2.5 text-sm text-stone-900 placeholder-stone-400 focus:outline-none focus:ring-2 focus:ring-stone-900 focus:border-transparent transition"
+        />
+      </div>
+
+      <div>
+        <label for="lf-message" class="block text-sm font-medium text-stone-700 mb-1">
+          Mensagem <span class="text-stone-400 font-normal">(opcional)</span>
+        </label>
+        <textarea
+          id="lf-message"
+          name="message"
+          rows="3"
+          placeholder="Descreva o que você precisa..."
+          class="w-full rounded-lg border border-stone-300 bg-white px-3 py-2.5 text-sm text-stone-900 placeholder-stone-400 focus:outline-none focus:ring-2 focus:ring-stone-900 focus:border-transparent transition resize-none"
+        ></textarea>
+      </div>
+
+      <button
+        id="lf-submit"
+        type="submit"
+        data-track="cta"
+        data-id="lead_submit"
+        class="w-full bg-stone-900 hover:bg-stone-800 active:bg-stone-950 text-white font-semibold text-sm py-3 px-6 rounded-lg transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+      >
+        Enviar mensagem
+      </button>
+
+      <p
+        id="lf-feedback"
+        role="status"
+        aria-live="polite"
+        class="text-sm text-center min-h-[1.25rem]"
+      ></p>
+
+    </form>
+  </div>
+</section>
+
+<script>
+(function () {
+  var form = document.getElementById('lead-form');
+  var btn = document.getElementById('lf-submit');
+  var fb = document.getElementById('lf-feedback');
+
+  if (!form) return;
+
+  form.addEventListener('submit', async function (e) {
+    e.preventDefault();
+
+    var name = document.getElementById('lf-name').value.trim();
+    var phone = document.getElementById('lf-phone').value.trim();
+    var message = document.getElementById('lf-message').value.trim();
+
+    if (!name || !phone) {
+      fb.textContent = 'Por favor, preencha nome e telefone.';
+      fb.className = 'text-sm text-center min-h-[1.25rem] text-red-600';
+      return;
+    }
+
+    btn.disabled = true;
+    btn.textContent = 'Enviando...';
+    fb.textContent = '';
+    fb.className = 'text-sm text-center min-h-[1.25rem]';
+
+    try {
+      var res = await fetch(SUPABASE_URL + '/rest/v1/leads', {
+        method: 'POST',
+        headers: {
+          'apikey': SUPABASE_ANON,
+          'Authorization': 'Bearer ' + SUPABASE_ANON,
+          'Content-Type': 'application/json',
+          'Prefer': 'return=minimal'
+        },
+        body: JSON.stringify({
+          prospect_slug: SLUG,
+          name: name,
+          phone: phone,
+          message: message || null
+        })
+      });
+
+      if (res.status === 201) {
+        fb.textContent = 'Recebemos seu contato! Em breve entraremos em contato.';
+        fb.className = 'text-sm text-center min-h-[1.25rem] text-green-700 font-medium';
+        form.reset();
+        if (typeof trackEvent === 'function') {
+          trackEvent('lead_submit', { name: name, phone: phone });
+        }
+      } else {
+        throw new Error('HTTP ' + res.status);
+      }
+    } catch (err) {
+      fb.textContent = 'Não foi possível enviar, tente pelo WhatsApp.';
+      fb.className = 'text-sm text-center min-h-[1.25rem] text-red-600';
+    } finally {
+      btn.disabled = false;
+      btn.textContent = 'Enviar mensagem';
+    }
+  });
+})();
+</script>
+<!-- ===== /LEAD FORM — APG-116 ===== -->
+
 <script>
 const SUPABASE_URL = 'https://zuwaegqhzicecobepdpg.supabase.co';
 const SUPABASE_ANON = 'sb_publishable___uJE6XYZm6QTlIGvSl2sg_jFTcQ0oV';
