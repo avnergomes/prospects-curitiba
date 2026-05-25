@@ -37,9 +37,9 @@
     <h1 class="display text-4xl md:text-6xl leading-tight mb-6 font-bold"><span class='text-secondary'>ACDelco Multimarcas</span></h1>
     <p class="text-base md:text-lg max-w-2xl mx-auto mb-10 text-white/85 leading-relaxed">Oficina mecânica no Parolin</p>
     <div class="flex flex-col sm:flex-row gap-3 justify-center">
-      <a href="https://wa.me/?text=Ol%C3%A1%21+Vim+pelo+site.+Gostaria%20de%20agendar%20um%20atendimento"
+      <a data-track="cta" data-id="whatsapp" href="https://wa.me/?text=Ol%C3%A1%21+Vim+pelo+site.+Gostaria%20de%20agendar%20um%20atendimento"
          target="_blank" rel="noopener" class="bg-secondary hover:bg-secondary-dark text-white font-bold px-10 py-4 rounded-full transition uppercase tracking-wider text-sm display shadow-lg">Agendar pelo WhatsApp</a>
-      <a href="tel:" class="border-2 border-secondary text-secondary hover:bg-secondary hover:text-white font-bold px-10 py-4 rounded-full transition uppercase tracking-wider text-sm display">—</a>
+      <a data-track="cta" data-id="telefone" href="tel:" class="border-2 border-secondary text-secondary hover:bg-secondary hover:text-white font-bold px-10 py-4 rounded-full transition uppercase tracking-wider text-sm display">—</a>
     </div>
     <div class="mt-10 text-sm text-white/85"><span class="text-secondary">★ 4,5</span> · — avaliações no Google</div>
     
@@ -109,13 +109,13 @@
         </div>
         <div>
           <p class="text-xs uppercase tracking-wider text-stone-500 mb-1 font-bold">Telefone</p>
-          <p><a href="tel:" class="hover:text-primary transition">—</a></p>
+          <p><a data-track="cta" data-id="telefone" href="tel:" class="hover:text-primary transition">—</a></p>
         </div>
       </div>
       <div class="mt-8 flex flex-col sm:flex-row gap-3">
-        <a href="https://wa.me/?text=Ol%C3%A1%21+Vim+pelo+site.+Gostaria%20de%20agendar%20um%20atendimento"
+        <a data-track="cta" data-id="whatsapp" href="https://wa.me/?text=Ol%C3%A1%21+Vim+pelo+site.+Gostaria%20de%20agendar%20um%20atendimento"
            target="_blank" rel="noopener" class="bg-primary hover:bg-primary-dark text-white font-bold px-8 py-3 rounded-full transition uppercase tracking-wider text-sm display text-center">WhatsApp</a>
-        <a href="tel:" class="bg-secondary hover:bg-secondary-dark text-white font-bold px-8 py-3 rounded-full transition uppercase tracking-wider text-sm display text-center">Ligar</a>
+        <a data-track="cta" data-id="telefone" href="tel:" class="bg-secondary hover:bg-secondary-dark text-white font-bold px-8 py-3 rounded-full transition uppercase tracking-wider text-sm display text-center">Ligar</a>
       </div>
     </div>
     <div class="aspect-square bg-stone-100 rounded-sm overflow-hidden shadow-lg">
@@ -131,5 +131,17 @@
   <p class="mt-2 text-white/30">Versão de demonstração — site institucional proposto.</p>
 </footer>
 
+<script>
+const SUPABASE_URL = 'https://zuwaegqhzicecobepdpg.supabase.co';
+const SUPABASE_ANON = 'sb_publishable___uJE6XYZm6QTlIGvSl2sg_jFTcQ0oV';
+const SLUG = 'oficina-mecanica-acdelco-multimarcas';
+async function trackEvent(type, meta = {}) {
+  try { await fetch(`${SUPABASE_URL}/rest/v1/events`, { method: 'POST', headers: { 'apikey': SUPABASE_ANON, 'Authorization': `Bearer ${SUPABASE_ANON}`, 'Content-Type': 'application/json' }, body: JSON.stringify({ prospect_slug: SLUG, type, user_agent: navigator.userAgent, referrer: document.referrer, meta }) }); } catch (e) {}
+}
+trackEvent('page_view');
+document.querySelectorAll('[data-track="cta"]').forEach(el => { el.addEventListener('click', () => trackEvent('cta_click', { id: el.dataset.id })); });
+let scrolledBottom = false;
+window.addEventListener('scroll', () => { if (!scrolledBottom && (window.innerHeight + window.scrollY) >= document.body.offsetHeight - 80) { scrolledBottom = true; trackEvent('scroll_bottom'); } });
+</script>
 </body>
 </html>
